@@ -123,32 +123,70 @@
 
 //prototype
 
-function Player(name, health, attack){
+// function Player(name, health, attack){
     
-    this.name = name;
-    this.health = health;
-    this.attack = attack;
-}
+//     this.name = name;
+//     this.health = health;
+//     this.attack = attack;
+// }
 
-Player.prototype.heal = function (healed){
+// Player.prototype.heal = function (healed){
+//     this.health += healed;
+//     return `${this.name} has healed ${healed} HP!`;
+// }
+
+// Player.prototype.buff = function(buffed){
+//     this.attack += buffed;
+//     return `${this.name} is buffed with ${buffed} attack!`;
+// }
+
+// Player.prototype.attacked = function(damage){
+//     this.health -= damage;
+//     return `${this.name} has been damaged ${damage} point!`;
+// }
+
+// Player.prototype.awaken = function(multiplier){
+//     this.health = this.health*multiplier;
+//     this.attack = this.attack*multiplier;
+//     return`${this.name} has awaken with ${multiplier}X multiplier!`
+// }
+
+// let sinopal = new Player('Sinopla',100,35);
+
+//----versi class---
+//commonly used
+class Player{
+    constructor(name,health,attack){
+        this.name = name;
+        this.health = health;
+        this.attack = attack;
+    }
+
+     heal(healed){
     this.health += healed;
     return `${this.name} has healed ${healed} HP!`;
-}
+    }
 
-Player.prototype.buff = function(buffed){
-    this.attack += buffed;
-    return `${this.name} is buffed with ${buffed} attack!`;
-}
+    buff(buffed){
+        this.attack += buffed;
+        return `${this.name} is buffed with ${buffed} attack!`;
+    }
 
-Player.prototype.attacked = function(damage){
-    this.health -= damage;
-    return `${this.name} has been damaged ${damage} point!`;
-}
+    attacked(damage){
+        this.health -= damage;
+        return `${this.name} has been damaged ${damage} point!`;
+    }
 
-Player.prototype.awaken = function(multiplier){
-    this.health = this.health*multiplier;
-    this.attack = this.attack*multiplier;
-    return`${this.name} has awaken with ${multiplier}X multiplier!`
+    awaken(multiplier){
+        this.health = this.health*multiplier;
+        this.attack = this.attack*multiplier;
+        return`${this.name} has awaken with ${multiplier}X multiplier!`
+    }
 }
+let sinopal = new Player('Nopal',75,50);
 
-let sinopal = new Player('Sinopla',100,35);
+
+//bonus
+let angka = [2,6,4,2,7];
+console.log(angka.reverse());
+console.log(angka.sort());
