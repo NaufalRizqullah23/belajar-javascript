@@ -2,10 +2,10 @@
 
 //lexical scope
 function init(){
-    let nama = 'Naufal';
-    function tampilNama(){
+    // let nama = 'Naufal';
+    return function(nama){
         console.log(nama);
     }
-    tampilNama();
 }
-init();
+let panggileNama = init();
+panggileNama('Sinopal');
