@@ -188,5 +188,5 @@ let sinopal = new Player('Nopal',75,50);
 
 //bonus
 let angka = [2,6,4,2,7];
-console.log(angka.reverse());
-console.log(angka.sort());
+// console.log(angka.reverse());
+// console.log(angka.sort());
