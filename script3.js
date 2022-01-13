@@ -9,3 +9,4 @@ function init(){
 }
 let panggileNama = init();
 panggileNama('Sinopal');
+panggileNama('Rijkuloh');
