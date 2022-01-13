@@ -30,28 +30,47 @@
 //hoisting
 
 //---konsep scope
-var nama = 'Naufal Rizqulah';
-var ig = 'naufalrizqullah23';
+// var nama = 'Naufal Rizqulah';
+// var ig = 'naufalrizqullah23';
 
-function cetakURL(ig){
-    var instaURL = 'https://instagram.com/';
-    return instaURL+ig;
-}
+// function cetakURL(ig){
+//     var instaURL = 'https://instagram.com/';
+//     return instaURL+ig;
+// }
 
-console.log(cetakURL('himatifuinbandung'));
+// console.log(cetakURL('himatifuinbandung'));
 //konsep scope---
 
-function a(){
-    console.log(`ini a`);
+// function a(){
+//     console.log(`ini a`);
 
-    function b(){
-        console.log(`ini b`);
+//     function b(){
+//         console.log(`ini b`);
 
-        function c(){
-            console.log(`ini c`);
-        }
-        c();
-    }
-    b();
+//         function c(){
+//             console.log(`ini c`);
+//         }
+//         c();
+//     }
+//     b();
+// }
+// a();
+
+
+
+//kesimpulan
+
+function satu(){
+    var namaewa = 'Naufal';
+    console.log(namaewa);
 }
-a();
+
+function dua(){
+    console.log(namaewa);
+}
+
+console.log(namaewa);
+var namaewa = 'Rizqullah';
+satu();
+dua('Sinopla');
+console.log(namaewa);
